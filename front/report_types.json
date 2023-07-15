@@ -1,0 +1,37 @@
+{
+  "ReportCyberSecurityIncident": {
+    "1": "Infection with malware (Trojan, ransomware, worm, etc.)",
+    "2": "Phishing",
+    "3": "DoS/DDoS",
+    "4": "Hacked social network account",
+    "5": "Fake social network account",
+    "6": "Cyberfraud",
+    "7": "Web defacement",
+    "8": "Network intrusion",
+    "9": "Data stealing",
+    "10": "Suspicious e-mail attachment and link",
+    "99": "Other"
+  },
+  "RaisePersonalDataConcern": {
+    "1": "Illegal collection of personal data",
+    "2": "Illegal processing of personal data",
+    "3": "Failure to ensure the protection of personal data",
+    "99": "Other"
+  },
+  "ReportIllegalContentOnTheInternet": {
+    "1": "Information on the promotion and financing of terrorism, as well as open calls for terror",
+    "2": "Information on promotion of violence and religious extremism, and open encouragement of national, racial or religious hatred and enmity",
+    "3": "Information on violently changing the constitutional order of the state, violating territorial integrity, forcibly seizing or retaining power",
+    "4": "Information on open calls for organizing riots",
+    "5": "Information constituting a state secret",
+    "6": "Information on the procedure and methods of manufacturing firearms, their components, ammunition and explosives",
+    "7": "Information on the procedure and methods of manufacturing and use of narcotic drugs and psychotropic substances and their precursors",
+    "8": "Information pertaining to pornography, including child pornography",
+    "9": "Information encouraging organisation of gambling and other illegal betting games and participation in such games",
+    "10": "Information promoting suicide as a solution to problems",
+    "11": "Information of an offensive and libellous nature, as well as information violating privacy",
+    "12": "Information infringing intellectual property rights",
+    "13": "Other information, the dissemination of which is prohibited by the laws of the Republic of Azerbaijan",
+    "99": "Other"
+  }
+}
