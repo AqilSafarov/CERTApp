@@ -7,7 +7,6 @@
 <!-- ABOUT THE HACKATHON -->
 ## About The Project
 
-<img width="947" alt="Screenshot 2023-07-25 152844" src="https://github.com/AqilSafarov/hackathonReactNative/assets/75013710/d3672e08-3dea-4dbe-ba20-32fb32cbdab5">
 
 The application we created was for Azerbaijan Cyber Security Service (CERT.AZ).  During the Hackathon  Our team faced The challenges that are the shortage of time and lack of experience in preffered technologies. But we did our best and here is our product.The mobile app is designed to facilitate the creation and tracking of reports related to cyber security
 
