@@ -48,6 +48,9 @@ The application we created was for Azerbaijan Cyber Security Service (CERT.AZ). 
 
 ### Admin Page
 
+<img width="920" alt="Screenshot 2023-07-25 153758" src="https://github.com/AqilSafarov/CERTApp/assets/75013710/4e91d366-54ac-49cb-8c6f-614a369ae301">
+
+
 We also created the web admin page where:
 * Admin can see, manage and handle reports.
 * Also admin can see the statistics of the reports according to timeline, status and categories.
