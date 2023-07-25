@@ -63,7 +63,7 @@ React Native for IOS/Android frontend development
 - [x] Fast API for backend
 - [x] MongoDB for database
 
-[![My Skills](https://skills.thijs.gg/icons?i=react)](https://skills.thijs.gg)
+[![My Skills](https://skills.thijs.gg/icons?i=react,mongodb,py)](https://skills.thijs.gg)
 
 
 
