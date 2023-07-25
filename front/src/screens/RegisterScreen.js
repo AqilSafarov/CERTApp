@@ -16,7 +16,7 @@ const SignUp = () => {
 
   const [firstName, setFirstName] = useState({ value: '', error: '' })
   const [lastName, setLastName] = useState({ value: '', error: '' })
-  const [company, setCompany] = useState('')
+  const [organization, setOrganization] = useState({ value: '', error: '' })
   const [email, setEmail] = useState({ value: '', error: '' })
   const [phone, setPhone] = useState({ value: '', error: '' })
   const [password, setPassword] = useState({ value: '', error: '' })
@@ -85,32 +85,27 @@ const SignUp = () => {
       return
     }
 
-    // Prepare the form data
     const jsonData = {
       first_name: firstName.value,
       last_name: lastName.value,
       email: email.value,
       password: password.value,
       phone: phone.value,
-      organization: company.value,
+      organization: organization.value,
     }
 
-    // Make the POST request
     try {
       navigation.reset({
         index: 0,
-        routes: [{ name: 'Dashboard' }],
+        routes: [{ name: 'LoginScreen' }],
       })
-      const response = await fetch(
-        'http://3.78.213.115:8000/register/',
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(jsonData),
-        }
-      )
+      const response = await fetch('http://3.78.213.115:8000/register/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(jsonData),
+      })
 
       if (!response.ok) {
         const errorData = await response.json()
@@ -118,13 +113,9 @@ const SignUp = () => {
       }
 
       console.log('Registration successful')
-      // navigation.replace('Login') // Navigate to the login screen
     } catch (error) {
       alert('Registration failed: ' + error.message)
-      navigation.reset({
-        index: 0,
-        routes: [{ name: 'Dashboard' }],
-      })
+      
     }
   }
 
@@ -162,9 +153,10 @@ const SignUp = () => {
         <TextInput
           style={styles.input}
           placeholder="Organization"
-          value={company}
-          onChangeText={setCompany}
+          value={organization.value}
+          onChangeText={(text) => setOrganization({ value: text, error: '' })}
         />
+
         <TextInput
           style={[styles.input, email.error ? styles.errorInput : {}]}
           placeholder="Email*"
@@ -220,8 +212,7 @@ const SignUp = () => {
         <TouchableOpacity style={styles.submitButton} onPress={handleSubmit}>
           <Text style={styles.buttonText}>Register</Text>
         </TouchableOpacity>
-        <Text style={styles.note}>
-        </Text>
+        <Text style={styles.note}></Text>
       </View>
     </KeyboardAvoidingView>
   )
@@ -232,49 +223,49 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF',
-    padding: 20,
+    backgroundColor: '#FFF',
   },
   title: {
-    fontSize: 24,
+    fontSize: 28,
     fontWeight: 'bold',
-    marginBottom: 20,
-    color: '#254A60',
+    marginBottom: 30,
   },
   form: {
-    width: '100%',
+    width: '80%',
   },
   input: {
-    height: 40,
-    borderColor: 'gray',
+    width: '100%',
+    height: 44,
+    padding: 10,
     borderWidth: 1,
-    marginBottom: 5,
-    paddingHorizontal: 10,
-  },
-  submitButton: {
-    backgroundColor: '#15172B',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
+    borderColor: '#CCC',
     marginBottom: 10,
-    borderRadius: 8,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  buttonText: {
-    color: '#ffffff',
-    fontSize: 18,
-  },
-  note: {
-    marginTop: 10,
-    fontSize: 12,
-    fontStyle: 'italic',
+    borderRadius: 5,
   },
   errorInput: {
     borderColor: 'red',
   },
   errorText: {
     color: 'red',
-    paddingBottom: 5,
+    marginBottom: 10,
+  },
+  submitButton: {
+    width: '100%',
+    height: 44,
+    padding: 10,
+    backgroundColor: '#007BFF',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+  buttonText: {
+    color: '#FFF',
+    fontWeight: 'bold',
+  },
+  note: {
+    marginTop: 10,
+    color: '#888',
+    fontSize: 12,
   },
 })
 

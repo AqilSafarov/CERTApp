@@ -11,8 +11,6 @@ import {
   Dashboard,
   ReportGeneral,
   ReportWriting,
-  ReportWriting2,
-  ReportWriting3,
   ArticlePage,
   ProfilePage,
 } from './src/screens'
@@ -35,8 +33,6 @@ export default function App() {
           <Stack.Screen name="Dashboard" component={Dashboard} />
           <Stack.Screen name="ReportGeneral" component={ReportGeneral} />
           <Stack.Screen name="ReportWriting" component={ReportWriting} />
-          <Stack.Screen name="ReportWriting2" component={ReportWriting2} />
-          <Stack.Screen name="ReportWriting3" component={ReportWriting3} />
           <Stack.Screen name="ProfilePage" component={ProfilePage} />
           <Stack.Screen name="ArticlePage" component={ArticlePage} />
         
