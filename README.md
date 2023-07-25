@@ -1,7 +1,4 @@
 
-<p align="center"><a href="https://github.com/AqilSafarov/hgg/tree/master">Download project report and slide</a></p>
-
-
 
 <!-- ABOUT THE HACKATHON -->
 ## About The Project
