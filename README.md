@@ -1,82 +1,75 @@
-
+<img width="923" alt="Screenshot 2023-07-25 153518" src="https://github.com/AqilSafarov/CERTApp/assets/75013710/b40c0042-4615-4b07-b691-0ca23e9a8a39">
 
 <p align="center"><a href="https://github.com/AqilSafarov/hgg/tree/master">Download project report and slide</a></p>
 
 
 
-<!-- ABOUT THE PROJECT -->
+<!-- ABOUT THE HACKATHON -->
 ## About The Project
 
-<img width="601" alt="Screenshot 2023-07-15 231903" src="https://github.com/AqilSafarov/AKMCapstoneProject/assets/75013710/34730505-90ae-49b7-b2db-5a90c444edd3">
+<img width="947" alt="Screenshot 2023-07-25 152844" src="https://github.com/AqilSafarov/hackathonReactNative/assets/75013710/d3672e08-3dea-4dbe-ba20-32fb32cbdab5">
+
+The application we created was for Azerbaijan Cyber Security Service (CERT.AZ).  During the Hackathon  Our team faced The challenges that are the shortage of time and lack of experience in preffered technologies. But we did our best and here is our product.The mobile app is designed to facilitate the creation and tracking of reports related to cyber security
+
+## Main Page
+
+* Main page is consist of Login and Sign-up
+* You can see  all necessary fields in the Sign-up page
+* After the Sign-up we go to Login page, inserting the credentials and see dashboard page
+
+<img width="312" alt="Screenshot 2023-07-25 153123" src="https://github.com/AqilSafarov/hackathonReactNative/assets/75013710/8a3a2d41-3812-41e8-a2a2-ca74fb441126">
 
 
-The objective of this project was to develop a detection mechanism for brute force attacks using Splunk, a powerful security information and event management (SIEM) platform. The scope of the project focused specifically on identifying and mitigating brute force attacks against user accounts and passwords within an Active Directory Domain Services (AD DS) environment
+## Sign Up
 
-## Objective and Scope
-Brute force attacks are one of the most common methods used by attackers to gain unauthorized access to systems and sensitive data. By systematically attempting multiple combinations of usernames and passwords, attackers exploit weak credentials and security vulnerabilities. The consequences of successful brute force attacks can be severe, including unauthorized access, data breaches, and compromised user accounts.
-
-The primary objective of this project was to enhance the security posture of the organization by developing an effective detection mechanism for brute force attacks within the AD DS environment. The focus was on quickly identifying and mitigating such attacks to prevent unauthorized access to user accounts and passwords.
-
-## Importance of Detecting and Mitigating Brute Force Attacks
-
-In an AD DS environment, where user accounts and passwords play a vital role in granting access to resources, detecting and mitigating brute force attacks is of paramount importance. The AD DS infrastructure forms the backbone of user authentication and authorization, making it a prime target for attackers seeking to exploit weak credentials. By effectively detecting and responding to brute force attacks, organizations can mitigate the risks associated with compromised user accounts, unauthorized access, and potential data breaches. Timely detection allows security teams to identify and neutralize attacks before they cause significant damage, protecting the organization's sensitive data, intellectual property, and reputation
+<img width="346" alt="Screenshot 2023-07-25 153341" src="https://github.com/AqilSafarov/hackathonReactNative/assets/75013710/08150879-566b-46d9-b5eb-6cfd7f368b62">
 
 
 
 <img width="731" alt="Screenshot 2023-07-15 232232" src="https://github.com/AqilSafarov/AKMCapstoneProject/assets/75013710/2c3d72bb-c8cd-4f82-a094-c1b91cce4da2">
 
-### Methodology and Approach
-To achieve the project objective, a systematic and comprehensive approach was adopted. The methodology involved the following key steps:
+### Login
 
-* Environment Setup: A fully featured AD DS environment was created, including the deployment of domain controllers, user accounts, and associated policies. This environment closely resembled a real-world scenario, ensuring the validity and accuracy of the project findings.
-* SIEM Deployment: A centralized SIEM server was deployed, leveraging the capabilities of Splunk. The SIEM server acted as a central hub for collecting and analyzing logs from various endpoints within the AD DS environment
-* Brute Force Attack Simulations: Various types of brute force attacks were simulated against the AD DS environment, targeting user accounts and passwords. These simulated attacks represented common techniques used by attackers and helped evaluate the effectiveness of the detection mechanism
-* EventID Identification: Through extensive analysis of the generated logs, specific EventIDs associated with brute force attacks were identified. These EventIDs served as indicators of compromise and formed the basis for detection and alert generation in Splunk
-* Detection Mechanism and Alert Generation: Using Splunk, a detection mechanism was implemented to identify and correlate the identified EventIDs in real-time. Custom alert rules and dashboards were created to promptly notify security personnel of potential brute force attacks, allowing them to initiate appropriate response measures
-* Verification and Mitigation: The effectiveness of the detection mechanism was verified by conducting additional brute force attack simulations and assessing the system's ability to detect and respond to them. Mitigation measures, such as account lockouts, password complexity policies, and multi-factor authentication, were recommended to enhance the security posture and resilience against brute force attacks
+<img width="360" alt="Screenshot 2023-07-25 153431" src="https://github.com/AqilSafarov/hackathonReactNative/assets/75013710/cbcddf34-78bc-41fa-ba49-6d2fd392b01a">
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Dashboard
+
+<img width="923" alt="Screenshot 2023-07-25 153518" src="https://github.com/AqilSafarov/CERTApp/assets/75013710/b5caec15-8599-40ba-a732-041159eb064c">
 
 
-
-### System Specifications for All Machines
-
-
-* **Domain Controller (Windows Server 2019)**
-- [x] CPUs: 2 CPUs.
-- [x] RAM: 2048 MB (2GB).
-- [x] Disk Space: 40 GB.
-- [x] Hyper-V Virtual Machine: Generation 1
-- [x] Network Connection: Connected to the Capstone NAT network
-
-* **Splunk Machine (Windows Server 2019)**
-- [x] CPUs: 4 CPUs.
-- [x] RAM: 8 GB.
-- [x] Disk Space: 40 GB.
-- [x] Hyper-V Virtual Machine: Generation 1
-- [x] Network Connection: Connected to the Capstone NAT network
-
-* **Windows 10 Machines (3)**
-- [x] CPUs: 4 CPUs.
-- [x] RAM: 2048 MB (2GB) each.
-- [x] Disk Space: 40 GB each.
-- [x] Hyper-V Virtual Machine: Generation 1
-- [x] Each machine is connected to the Capstone NAT network
-
-* **Commando VM Machine (Windows 10 21H1)**
-- [x] CPUs: 4 CPUs.
-- [x] RAM: 4+ GB.
-- [x] Disk Space: 80+ GB.
-- [x] Hyper-V Virtual Machine: Generation 1
-- [x] Network Connection: Initially, select the Default Switch during Commando VM installation. After installation, change this to the Capstone NAT network
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Creating a Report
+
+<img width="867" alt="Screenshot 2023-07-25 153610" src="https://github.com/AqilSafarov/CERTApp/assets/75013710/5f8d26c2-5610-4cba-8c23-42cc0b3cc424">
 
 
+### User Profile
+
+<img width="301" alt="Screenshot 2023-07-25 153718" src="https://github.com/AqilSafarov/CERTApp/assets/75013710/883fd655-eb0d-4578-b527-528b0840dd65">
+
+### Admin Page
+
+We also created the web admin page where:
+* Admin can see, manage and handle reports.
+* Also admin can see the statistics of the reports according to timeline, status and categories.
+* Admin can see the database of the registrated users.
+
+## Technology we used
+
+<img width="808" alt="Screenshot 2023-07-25 153916" src="https://github.com/AqilSafarov/CERTApp/assets/75013710/c37fbec1-1872-42dc-a166-4e4cfc130b01">
+
+
+React Native for IOS/Android frontend development
+- [x] React for Admin panel
+- [x] Fast API for backend
+- [x] MongoDB for database
+
+[![My Skills](https://skills.thijs.gg/icons?i=react)](https://skills.thijs.gg)
 
 
 
