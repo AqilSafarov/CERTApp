@@ -1,4 +1,3 @@
-<img width="923" alt="Screenshot 2023-07-25 153518" src="https://github.com/AqilSafarov/CERTApp/assets/75013710/b40c0042-4615-4b07-b691-0ca23e9a8a39">
 
 <p align="center"><a href="https://github.com/AqilSafarov/hgg/tree/master">Download project report and slide</a></p>
 
@@ -25,7 +24,6 @@ The application we created was for Azerbaijan Cyber Security Service (CERT.AZ). 
 
 
 
-<img width="731" alt="Screenshot 2023-07-15 232232" src="https://github.com/AqilSafarov/AKMCapstoneProject/assets/75013710/2c3d72bb-c8cd-4f82-a094-c1b91cce4da2">
 
 ### Login
 
